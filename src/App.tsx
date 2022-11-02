@@ -55,7 +55,7 @@ function App() {
         {data && (
           <div data-testid="list-item">
             {data.map((item, idx) => {
-              return <ListItem index={idx} {...item} />;
+              return <ListItem key={item.uid} index={idx} {...item} />;
             })}
           </div>
         )}

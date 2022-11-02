@@ -3,6 +3,7 @@ import App from "./App";
 
 test("renders learn react link", () => {
   render(<App />);
+  window.alert = () => {};
 
   const searchButton = screen.getByText("Search");
   const input = screen.getByPlaceholderText("Enter user name");

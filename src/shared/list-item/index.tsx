@@ -16,11 +16,10 @@ export const ListItem = ({
   position,
   isSearchedUser,
   index,
-  alt,
 }: ListItemProps) => {
   return (
     <List>
-      <Item className="">{name}</Item>
+      <Item>{name}</Item>
       <Item>{position ? position : index! + 1}</Item>
       <Item>{bananas}</Item>
       <Item>{isSearchedUser ? "yes" : "no"}</Item>
