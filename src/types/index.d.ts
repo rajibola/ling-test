@@ -28,3 +28,9 @@ type ListItemProps = Partial<
 export interface SearchBarProps {
   onClick: (e: string) => void;
 }
+
+export interface SvgProps {
+  width?: number;
+  height?: number;
+  className?: string;
+}
