@@ -6,11 +6,11 @@
 
 <span>
 
-<img src="./docs/preview.png" alt="preview"  width="270" />
+<img src="./docs/preview.png" alt="preview"  width="400" />
 
 ## Test Coverage
 
-<img src="./docs/test.png" alt="preview"  width="270" />
+<img src="./docs/test.png" alt="preview"  width="400" />
 </span>
 
 ## Getting Started
