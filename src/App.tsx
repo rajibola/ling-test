@@ -1,12 +1,12 @@
 import { useCallback, useState } from "react";
-import { ListItem, SearchBar } from "./shared";
-import { ListHeader } from "./shared/list-header";
+import { ListItem, SearchBar, ListHeader } from "./shared";
 import { DataType, UserType } from "./types";
 import { LEADERBOARD, TITLES } from "./utils";
 
 function App() {
   const DATA = LEADERBOARD as DataType;
   const [data, setData] = useState<UserType[]>();
+
   const onClickSearch = useCallback(
     (search: string) => {
       const dataValues = Object.values(DATA);
