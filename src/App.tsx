@@ -4,7 +4,7 @@ import { DataType, UserType } from "./types";
 import { LEADERBOARD, TITLES } from "./utils";
 
 function App() {
-  const DATA = LEADERBOARD as DataType;
+  const DATA: DataType = LEADERBOARD;
   const [data, setData] = useState<UserType[]>();
 
   const onClickSearch = useCallback(

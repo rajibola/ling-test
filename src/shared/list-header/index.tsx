@@ -13,7 +13,7 @@ export const ListHeader = ({ titles }: ListHeaderProps) => {
         return (
           <div
             className="p-1 pl-2 border truncate text-white bg-black lg:text-lg sm:text-sm"
-            key={title + idx}
+            key={title}
           >
             {title}
           </div>

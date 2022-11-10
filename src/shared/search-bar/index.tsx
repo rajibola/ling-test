@@ -3,7 +3,8 @@ import { Search } from "../../assets";
 import { SearchBarProps } from "../../types";
 
 export const SearchBar = ({ onClick }: SearchBarProps) => {
-  const [searchText, setSearchText] = useState("");
+  const [searchText, setSearchText] = useState<string>("");
+
   return (
     <div className="flex relative items-center">
       <input
