@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("renders learn react link", () => {
+test("Search functionality works", () => {
   render(<App />);
   window.alert = () => {};
 
@@ -16,7 +16,7 @@ test("renders learn react link", () => {
   fireEvent.click(searchButton, { onclick: () => input });
 });
 
-test("renders hook", () => {
+test("Check if data is returned after searching with correct name", () => {
   render(<App />);
 
   const searchButton = screen.getByText("Search");

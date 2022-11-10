@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { SearchBar } from ".";
 
-test("renders learn react link", () => {
+test("SearchBar component renders correctly", () => {
   render(<SearchBar onClick={() => null} />);
 
   const input = screen.getByPlaceholderText("Enter user name");

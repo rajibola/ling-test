@@ -5,7 +5,7 @@ import { ListHeaderProps } from "../../types";
 
 const titles: ListHeaderProps["titles"] = ["One", "Two", "Three", "Four"];
 
-test("renders learn react link", () => {
+test("ListHeader component renders correctly", () => {
   render(<ListHeader titles={titles} />);
 
   const rankNameOne = screen.getByText("One");

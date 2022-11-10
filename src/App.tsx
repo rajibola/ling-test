@@ -7,7 +7,6 @@ import { LEADERBOARD, TITLES } from "./utils";
 function App() {
   const DATA = LEADERBOARD as DataType;
   const [data, setData] = useState<UserType[]>();
-
   const onClickSearch = useCallback(
     (search: string) => {
       const dataValues = Object.values(DATA);
@@ -50,6 +49,7 @@ function App() {
   return (
     <div className="App flex flex-col items-center pt-8 w-screen overflow-hidden">
       <SearchBar onClick={onClickSearch} />
+
       <div className="w-full lg:max-w-5xl mt-10 md:w-full">
         <ListHeader titles={TITLES} />
         {data && (
@@ -59,6 +59,10 @@ function App() {
             })}
           </div>
         )}
+      </div>
+      <div className=" text-red-700">
+        * Test with these names: <br />
+        Rica Ella Francisco <br /> Ghehan Tuiza Gonzaga <br /> Lawrence Chan
       </div>
     </div>
   );

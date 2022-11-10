@@ -10,14 +10,7 @@ const data = {
   index: 40,
 };
 
-test("renders learn react link", () => {
-  render(<ListItem {...data} alt={false} />);
-
-  const rankName = screen.getByText(20);
-  expect(rankName).toBeInTheDocument();
-});
-
-test("renders learn react", () => {
+test("ListItem renders correctly", () => {
   render(<ListItem {...data} />);
 
   const textName = screen.getByText("ridwan");
